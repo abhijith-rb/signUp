@@ -77,7 +77,7 @@ export default function Register() {
   }, [formErrors]);
   const validate = (values) => {
     const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i/;
     if (!values.username) {
       errors.username = "Company name is required!";
     }
